@@ -1,28 +1,36 @@
 import glob
 
 #caminho = "/home/research-data-ssd/yasmin/reports/"
-caminho = "C:/Users/yasmi/Documents/Vitec/reports/"
+caminho = "C:/Users/yasmi/codigos_github/Script-Gerar_Tabela/reports/"
+nomeout="*.out"
 teste2=""
 cont=0
 cont2=0
 cont5=0
+cont6=0
 nomeArquivo = ""
 config = ""
 qp = ""
 tempo=0
-
 
 tabela = open("tabela.csv", "w")
 tabela.write("Video;Config;QP;Frames;BitRate;PSNR;Tempo\n")
 tabela.close
 
 #NOME ARQUIVOS
-arquivos_out = glob.glob("*.out") 
+arquivos_out = glob.glob(f'{caminho}{nomeout}') 
 
 for nome in arquivos_out:
-    nomeArquivo += nome
-    nomeArquivo += "\n!\n"
-
+    for letra in nome:
+        if (letra == "."):
+            cont6=0
+        if (cont6 == 1):
+            nomeArquivo += letra
+       
+        elif (letra == "\\"):
+            cont6=1
+    nomeArquivo += ".out\n!\n"
+    
 for f in nomeArquivo:
     if (f == "!"):
         nome = teste2.strip('\n')

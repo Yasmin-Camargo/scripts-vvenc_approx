@@ -1,0 +1,11 @@
+Video;Config;QP;Frames;BitRate;PSNR;Tempo
+BasketballDrive_RA_32.out;Randon Acces;32;2;6462.4000;39.3488;357.595
+BasketballDrive_RA_37.out;Randon Acces;37;2;3673.0000;37.8650;192.646
+BQSquare_LD_22.out;Low Delay;22;1;12872.1600;43.7152;28.587
+BQSquare_LD_27.out;Low Delay;27;1;8670.7200;39.7177;33.346
+BQSquare_LD_32.out;Low Delay;32;1;5423.0400;35.8578;23.139
+BQSquare_LD_37.out;Low Delay;37;1;3395.5200;32.5179;14.262
+BQSquare_RA_22.out;Randon Acces;22;1;14119.6800;43.2337;48.847
+BQSquare_RA_27.out;Randon Acces;27;1;9816.0000;40.1405;40.045
+BQSquare_RA_32.out;Randon Acces;32;1;6328.3200;36.6697;31.828
+BQSquare_RA_37.out;Randon Acces;37;1;4014.2400;33.5120;19.184
