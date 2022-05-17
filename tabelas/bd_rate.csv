@@ -1,0 +1,13 @@
+Approx Module;VVenC Profile;Video;Read BER;Write BER;BD-Rate;BD-PSNR
+transf_approx;randomaccess_faster;RaceHorses_416x240_30;0;0;0.0 %;0.0 dB 
+transf_approx;randomaccess_faster;RaceHorses_416x240_30;1E_03;1E_03;180.71000321822126 %;-4.373973519528413 dB 
+transf_approx;randomaccess_faster;RaceHorses_416x240_30;1E_05;1E_05;0.7507058678383416 %;-0.03746988229640446 dB 
+transf_approx;randomaccess_faster;RaceHorses_416x240_30;1E_07;1E_07;0.1028910055323573 %;-0.006426827583910234 dB 
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;0;0;0.0 %;0.0 dB 
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_03;1E_03;88.64739801640084 %;-2.9099589597358406 dB 
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_05;1E_05;1.351293148680388 %;-0.0661062750469145 dB 
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_07;1E_07;0.17157875490327879 %;-0.008521611336089092 dB 
+transf_approx;randomaccess_slower;RaceHorses_416x240_30;0;0;0.0 %;0.0 dB 
+transf_approx;randomaccess_slower;RaceHorses_416x240_30;1E_03;1E_03;61.21229020731131 %;-2.284694031256964 dB 
+transf_approx;randomaccess_slower;RaceHorses_416x240_30;1E_05;1E_05;1.9770596621462744 %;-0.09668294544191015 dB 
+transf_approx;randomaccess_slower;RaceHorses_416x240_30;1E_07;1E_07;0.09145045185561251 %;-0.005078969280782137 dB 
