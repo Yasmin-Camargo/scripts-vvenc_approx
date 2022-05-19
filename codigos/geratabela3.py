@@ -42,8 +42,8 @@ def codigo_tabela3(): #Tabela 3
             PSNR_Modificada = [float(matriz_referencia[linha2][6]), float(matriz_referencia[linha2+1][6]), float(matriz_referencia[linha2+2][6]), float(matriz_referencia[linha2+3][6])]
             
             #Gravando dados na matriz
-            tabela3.write(f'{BD_RATE(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))} %;') #Calculo BD-RATE
-            tabela3.write(f'{BD_PSNR(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))} dB \n') #Calculo BD-PSNR
+            tabela3.write(f'{BD_RATE(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))};') #Calculo BD-RATE
+            tabela3.write(f'{BD_PSNR(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))}\n') #Calculo BD-PSNR
         
         #CALCULA para BERs diferentes de (0,0)
         for linha in range(0,num_linhas_matriz):
@@ -59,8 +59,8 @@ def codigo_tabela3(): #Tabela 3
                 Bitrate_Modificada = [float(matriz_tabela2[linha][7]), float(matriz_tabela2[linha+1][7]), float(matriz_tabela2[linha+2][7]), float(matriz_tabela2[linha+3][7])]
                 PSNR_Modificada    = [float(matriz_tabela2[linha][6]), float(matriz_tabela2[linha+1][6]), float(matriz_tabela2[linha+2][6]), float(matriz_tabela2[linha+3][6])]
                 
-                tabela3.write(f'{BD_RATE(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))} %;') #Calculo BD-RATE
-                tabela3.write(f'{BD_PSNR(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))} dB \n') #Calculo BD-PSNR
+                tabela3.write(f'{BD_RATE(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))};') #Calculo BD-RATE
+                tabela3.write(f'{BD_PSNR(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))}\n') #Calculo BD-PSNR
     
     tabela3.close()
                      

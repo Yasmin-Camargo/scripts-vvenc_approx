@@ -1,13 +1,13 @@
 Approx Module;VVenC Profile;Video;Read BER;Write BER;BD-Rate;BD-PSNR
-transf_approx;randomaccess_faster;RaceHorses_416x240_30;0;0;0.0 %;0.0 dB 
-transf_approx;randomaccess_faster;RaceHorses_416x240_30;1E_03;1E_03;180.71000321822126 %;-4.373973519528413 dB 
-transf_approx;randomaccess_faster;RaceHorses_416x240_30;1E_05;1E_05;0.7507058678383416 %;-0.03746988229640446 dB 
-transf_approx;randomaccess_faster;RaceHorses_416x240_30;1E_07;1E_07;0.1028910055323573 %;-0.006426827583910234 dB 
-transf_approx;randomaccess_medium;RaceHorses_416x240_30;0;0;0.0 %;0.0 dB 
-transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_03;1E_03;88.64739801640084 %;-2.9099589597358406 dB 
-transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_05;1E_05;1.351293148680388 %;-0.0661062750469145 dB 
-transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_07;1E_07;0.17157875490327879 %;-0.008521611336089092 dB 
-transf_approx;randomaccess_slower;RaceHorses_416x240_30;0;0;0.0 %;0.0 dB 
-transf_approx;randomaccess_slower;RaceHorses_416x240_30;1E_03;1E_03;61.21229020731131 %;-2.284694031256964 dB 
-transf_approx;randomaccess_slower;RaceHorses_416x240_30;1E_05;1E_05;1.9770596621462744 %;-0.09668294544191015 dB 
-transf_approx;randomaccess_slower;RaceHorses_416x240_30;1E_07;1E_07;0.09145045185561251 %;-0.005078969280782137 dB 
+transf_approx;randomaccess_faster;RaceHorses_416x240_30;0;0;0.0;0.0
+transf_approx;randomaccess_faster;RaceHorses_416x240_30;1E_03;1E_03;186.65291431676425;-4.393192940303453
+transf_approx;randomaccess_faster;RaceHorses_416x240_30;1E_05;1E_05;0.5904689932846985;-0.028220280407500443
+transf_approx;randomaccess_faster;RaceHorses_416x240_30;1E_07;1E_07;0.04108552539756616;-0.0025347960358147468
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;0;0;0.0;0.0
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_03;1E_03;92.15167855903823;-2.953525593125695
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_05;1E_05;1.3392911163639054;-0.06573018333044942
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_07;1E_07;0.21702982961413486;-0.009144121572312007
+transf_approx;randomaccess_slower;RaceHorses_416x240_30;0;0;0.0;0.0
+transf_approx;randomaccess_slower;RaceHorses_416x240_30;1E_03;1E_03;60.27824691008541;-2.2575251780825316
+transf_approx;randomaccess_slower;RaceHorses_416x240_30;1E_05;1E_05;2.641517502456159;-0.12974434342976116
+transf_approx;randomaccess_slower;RaceHorses_416x240_30;1E_07;1E_07;-0.0335161788396765;0.0007557410684766788

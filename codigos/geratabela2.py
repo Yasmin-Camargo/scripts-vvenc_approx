@@ -34,12 +34,7 @@ def codigo_tabela2(): #Tabela 2
         matriz[linha][9] = matriz[linha][9].replace ('\n', '')
         if (matriz[linha][6] == '0' and matriz[linha+1][6]=='1'): #Quando a repetição é 0 e a próxima é 1, calcular a média
             repeticoes=1
-        elif (matriz[linha][6] == '0'): #Inicializando as váriaveis para a nova repetição
-            media_psnr = 0
-            media_bitrate = 0
-            media_time = 0
-            repeticoes=0
-            
+        
         if (repeticoes > 0): #Calculando a média para Bitrate, PSNR e tempo quando existe repetição
             media_psnr += float(matriz[linha][7])
             media_bitrate += float(matriz[linha][8])
@@ -48,15 +43,20 @@ def codigo_tabela2(): #Tabela 2
             
             if (matriz[linha+1][6] == '0'): #Fim da repetição, armazena resultados na repetiçao 0
                 repeticoes-=1
-                matriz[(linha+1)-repeticoes][7]=media_psnr/repeticoes   
-                matriz[(linha+1)-repeticoes][8]=media_bitrate/repeticoes
-                matriz[(linha+1)-repeticoes][9]=media_time/repeticoes
+                matriz[(linha+1)-repeticoes][7] = float(media_psnr/repeticoes)   
+                matriz[(linha+1)-repeticoes][8] = float(media_bitrate/repeticoes)
+                matriz[(linha+1)-repeticoes][9] = float(media_time/repeticoes)
+                #Inicializando as váriaveis para a nova repetição
+                media_psnr = 0
+                media_bitrate = 0
+                media_time = 0
+                repeticoes=0
             
     for i in range(0,num_linhas_matriz-1): #Gravando dados na matriz
         if(matriz[i][6]=='0'): #Apenas os elementos com repetição 0 são gravados
             for j in range(0,10):
                 if (j!=6):
-                    tabela2.write(str(matriz[i][j]))
+                    tabela2.write(f'{matriz[i][j]}')
                     tabela2.write(';')
             tabela2.write('\n')
     tabela2.close()

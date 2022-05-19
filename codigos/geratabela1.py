@@ -2,7 +2,7 @@
 
 import os
  
-pasta_arquivos = "../test-transf-approx"  #Local da pasta com os arquivos .log
+pasta_arquivos = "../test-transf-approx-2reps"  #Local da pasta com os arquivos .log
 
 #FUNÇÕES:
 def remove_espaco(linha):

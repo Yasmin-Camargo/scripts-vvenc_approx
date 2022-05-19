@@ -1,0 +1,39 @@
+
+vvencFFapp: Encoder Version 1.0.0 [Linux][GCC 9.4.0][64 bit][SIMD=AVX2]
+ started @ Mon May 16 17:51:36 2022
+CODING TOOL CFG: CTU128 QT44BTT33 IBD:1 CIP:0 SAO:1 ALF:1 (NonLinLuma:1 NonLinChr:1) CCALF:1 WPP:0 WPP-Substreams:1 TMVP:1 DQ:1 (Thr: 4) SDH:0 CST:1 BDOF:1 DMVR:1 MTSImplicit:0 SBT:1 JCbCr:1 CabacInitPresent:1 AMVR:1 SMVD:1 LMCS:1 (Signal:SDR Opt:0) CIIP:1 MIP:1 AFFINE:1 (PROF:1, Type:1) MMVD:1 DisFracMMVD:1 SbTMVP:1 GPM:1 LFNST:1 MTS:1 (IntraCand:3) ISP:1 TS:2 TSLog2MaxSize:3 useChromaTS:0 BDPCM:2 IBC:2 
+ENC. ALG. CFG: QPA:0 HAD:1 RDQ:1 RDQTS:1 ASR:1 MinSearchWindow:96 RestrictMESampling:0 EDO:2 MCTF:2 [L:0, T:0] 
+FAST TOOL CFG: ECU:0 FEN:1 FDM:1 ESD:0 FastSearch:1 LCTUFast:1 FastMrg:1 PBIntraFast:1 AMaxBT:1 FastQtBtEnc:1 ContentBasedFastQtbt:0 FastMIP:0 FastIntraTools:0 FastLocalDualTree:1 FastSubPel:0 QtbttExtraFast:1 IBCFastMethod:1 
+RATE CONTROL CFG: RateControl:0 
+PARALLEL PROCESSING CFG: NumThreads:0 MaxParallelFrames:0 WppBitEqual:0 WF:0
+
+POC    0 TId: 0 (  IDR_N_LP, I-SLICE, QP 24 )     142032 bits [Y 39.6587 dB    U 41.8579 dB    V 42.6193 dB] [ET 18765 ] [L0 ] [L1 ]
+POC    8 TId: 2 (      STSA, B-SLICE, QP 29 )      56000 bits [Y 37.4645 dB    U 39.3907 dB    V 39.7105 dB] [ET 21932 ] [L0 0 ] [L1 0 ]
+POC    4 TId: 3 (      STSA, B-SLICE, QP 32 )      24096 bits [Y 35.4227 dB    U 39.0782 dB    V 39.5700 dB] [ET 12414 ] [L0 0 8 ] [L1 8 0 ]
+POC    2 TId: 4 (      STSA, B-SLICE, QP 34 )      12608 bits [Y 35.5588 dB    U 39.6634 dB    V 40.1151 dB] [ET  6497 ] [L0 0 4 ] [L1 4 8 ]
+POC    1 TId: 5 (      STSA, B-SLICE, QP 36 )       5680 bits [Y 35.3905 dB    U 39.9348 dB    V 40.6790 dB] [ET  3278 ] [L0 0 2 ] [L1 2 4 ]
+POC    3 TId: 5 (      STSA, B-SLICE, QP 36 )       5280 bits [Y 34.6747 dB    U 39.0886 dB    V 39.3406 dB] [ET  2076 ] [L0 2 0 ] [L1 4 8 ]
+POC    6 TId: 4 (      STSA, B-SLICE, QP 34 )      12608 bits [Y 35.2369 dB    U 38.7823 dB    V 39.2767 dB] [ET  3719 ] [L0 4 0 ] [L1 8 4 ]
+POC    5 TId: 5 (      STSA, B-SLICE, QP 36 )       5088 bits [Y 34.7003 dB    U 38.7347 dB    V 39.2987 dB] [ET  2063 ] [L0 4 0 ] [L1 6 8 ]
+POC    7 TId: 5 (      STSA, B-SLICE, QP 36 )       5360 bits [Y 34.5474 dB    U 38.6527 dB    V 39.1585 dB] [ET  2801 ] [L0 6 4 ] [L1 8 6 ]
+POC    9 TId: 5 (      STSA, B-SLICE, QP 36 )       8608 bits [Y 34.3123 dB    U 38.3841 dB    V 38.5053 dB] [ET  4165 ] [L0 8 0 ] [L1 8 0 ]
+
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR   
+	       10    a     832.0800   35.6967   39.3567   39.8274   36.4392
+
+ finished @ Tue May 17 15:26:55 2022
+ Total Time:    77449.447 sec. [user]    77719.702 sec. [elapsed]
+
+Level: 0
+Inject Calls: 14885407288
+Errors injected by bit:
+	Bit 0: 149064
+	Bit 1: 149436
+	Bit 2: 148898
+	Bit 3: 149445
+	Bit 4: 148548
+	Bit 5: 148942
+	Bit 6: 148567
+	Bit 7: 148936
+
+Total errors injected: 1191836
