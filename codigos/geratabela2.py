@@ -1,11 +1,16 @@
 #Scripit acessa o arquivo .csv e cria outro apenas com média dos arquivos que apresentam repetição
 
+import os
 
-def codigo_tabela2(): #Tabela 2
+def codigo_tabela2(pasta_tabelas): #Tabela 2
     #Abrindo e criando arquivos:
-    tabela2 = open("../tabelas/tabela2.csv", "w")
+    if os.path.isdir(pasta_tabelas):
+        tabela2 = open(f"{pasta_tabelas}tabela2.csv", "w")
+    else:
+        os.mkdir(pasta_tabelas)
+        tabela2 = open(f"{pasta_tabelas}tabela2.csv", "w")
     tabela2.write("Approx Module;VVenC Profile;Video;Read BER;Write BER;QP;YUV-PSNR;Bitrate;Execution Time\n")
-    tabela1 = open("../tabelas/complete_data.csv", "r") 
+    tabela1 = open(f"{pasta_tabelas}complete_data.csv", "r") 
 
     #variaveis
     media_bitrate=0

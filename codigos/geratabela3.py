@@ -1,11 +1,17 @@
 #Scripit acessa o arquivo .csv e cria outro com os calculos BD-RATE e BD-PSNR
 
 from bjontegaard_metric import *
+import os
 
-def codigo_tabela3(): #Tabela 3
+def codigo_tabela3(pasta_tabelas): #Tabela 3
     #Abrindo e criando arquivos:
-    tabela2 = open("../tabelas/tabela2.csv", "r") 
-    tabela3 = open("../tabelas/bd_rate.csv", "w")
+    if os.path.isdir(pasta_tabelas):
+        tabela3 = open(f"{pasta_tabelas}bd_rate.csv", "w")
+    else:
+        os.mkdir(pasta_tabelas)
+        tabela3 = open(f"{pasta_tabelas}bd_rate.csv", "w")
+        
+    tabela2 = open(f"{pasta_tabelas}tabela2.csv", "r") 
     tabela3.write("Approx Module;VVenC Profile;Video;Read BER;Write BER;BD-Rate;BD-PSNR\n")
     
     #Váriaveis

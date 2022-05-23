@@ -1,8 +1,6 @@
 #Scripit que busca os campos: YUV-PSNR, Bitrate, Execution Time em um arquivo .log e exporta para um arquivo .csv
 
 import os
- 
-pasta_arquivos = "../test-transf-approx-2reps"  #Local da pasta com os arquivos .log
 
 #FUNÇÕES:
 def remove_espaco(linha):
@@ -16,8 +14,13 @@ def remove_espaco(linha):
      linha = linha.split (';')
      return (linha)
 
-def codigo_tabela1(): #Tabela 1
-     tabela1 = open("../tabelas/complete_data.csv", "w")
+def codigo_tabela1(pasta_arquivos, pasta_tabelas): #Tabela 1
+     if os.path.isdir(pasta_tabelas):
+          tabela1 = open(f"{pasta_tabelas}complete_data.csv", "w")
+     else:
+          os.mkdir(pasta_tabelas)
+          tabela1 = open(f"{pasta_tabelas}complete_data.csv", "w")
+     
      tabela1.write("Approx Module;VVenC Profile;Video;Read BER;Write BER;QP;Rep.;YUV-PSNR;Bitrate;Execution Time\n")
 
      todos_arquivos = os.listdir(pasta_arquivos) #Obtendo nomes dos arquivos
