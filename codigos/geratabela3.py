@@ -1,4 +1,4 @@
-#Scripit acessa o arquivo .csv e cria outro com os calculos BD-RATE e BD-PSNR
+#Scripit que acessa o arquivo tabela2.csv e cria outro com os calculos BD-RATE e BD-PSNR
 
 from bjontegaard_metric import *
 import os

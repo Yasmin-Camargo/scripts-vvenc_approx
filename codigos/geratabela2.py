@@ -1,4 +1,4 @@
-#Scripit acessa o arquivo .csv e cria outro apenas com média dos arquivos que apresentam repetição
+#Scripit acessa o arquivo complete_data.csv e cria outro apenas com média dos arquivos que apresentam repetição
 
 import os
 
