@@ -65,8 +65,10 @@ def codigo_grafico1(pasta_tabelas): #Gráfico BD_Rate
     plt.xticks(x, ['1E_07','1E_05', '1E_03']) 
     plt.legend(["Faster", "Medium", "Slower"])
     plt.title(f'Tabela {matriz_tabela3[0][0]}') 
-    plt.show() #Mostra Gráfico
     
+    plt.savefig(f'{pasta_tabelas}tabela1-bdrate.png')  #Salva figura do gráfico
+    
+    plt.show() #Mostra Gráfico
     
         
     
