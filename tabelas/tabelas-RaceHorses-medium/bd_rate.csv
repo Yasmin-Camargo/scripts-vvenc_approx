@@ -1,0 +1,19 @@
+Approx Module;VVenC Profile;Video;Read BER;Write BER;BD-Rate;BD-PSNR
+fme_approx;randomaccess_medium;RaceHorses_416x240_30;0;0;0.0;0.0
+fme_approx;randomaccess_medium;RaceHorses_416x240_30;1E_03;1E_03;0.47672552441782035;-0.021470856429635053
+fme_approx;randomaccess_medium;RaceHorses_416x240_30;1E_04;1E_04;0.24941575897003965;-0.009587970102012594
+fme_approx;randomaccess_medium;RaceHorses_416x240_30;1E_05;1E_05;0.1086117094462491;-0.004209574925925706
+fme_approx;randomaccess_medium;RaceHorses_416x240_30;1E_06;1E_06;0.04234967495424513;-0.002090634821430839
+fme_approx;randomaccess_medium;RaceHorses_416x240_30;1E_07;1E_07;0.004686534653042251;-0.00026924161552221076
+ime_approx;randomaccess_medium;RaceHorses_416x240_30;0;0;0.0;0.0
+ime_approx;randomaccess_medium;RaceHorses_416x240_30;1E_03;1E_03;0.14368873095567114;-0.004640462617280782
+ime_approx;randomaccess_medium;RaceHorses_416x240_30;1E_04;1E_04;0.3076728967307263;-0.011333027675390805
+ime_approx;randomaccess_medium;RaceHorses_416x240_30;1E_05;1E_05;0.08159752444603097;-0.0018059734251713556
+ime_approx;randomaccess_medium;RaceHorses_416x240_30;1E_06;1E_06;-0.011213592235770342;0.0009930380463070581
+ime_approx;randomaccess_medium;RaceHorses_416x240_30;1E_07;1E_07;0.0;0.0
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;0;0;0.0;0.0
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_03;1E_03;89.71293930657349;-2.916011465928787
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_04;1E_04;15.170234538483896;-0.7105293740558449
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_05;1E_05;1.504821037842663;-0.07533180389109816
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_06;1E_06;0.2797343223488902;-0.012833018795808995
+transf_approx;randomaccess_medium;RaceHorses_416x240_30;1E_07;1E_07;0.0958983733394092;-0.002438525153175639

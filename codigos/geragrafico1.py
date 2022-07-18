@@ -1,75 +1,52 @@
-#Scripit que acessa o arquivo bd_rate.csv e cria gráfico com os bdrate
+#Scripit que acessa o arquivo bd_rate.csv e cria gráfico com os bdrate para cada módulo
 
 import matplotlib.pyplot as plt
 import numpy as np 
 
 def codigo_grafico1(pasta_tabelas): #Gráfico BD_Rate
-    y = []
-    erros=['1E_07','1E_05', '1E_03']
+    
+    #Váriaveis
+    bd_br = []  #eixo y
+    erros=['1E_03','1E_04','1E_05','1E_06','1E_07'] #eixo x
+    primeira_linha=1
+    
     #Abrindo arquivos:
     tabela3 = open(f"{pasta_tabelas}bd_rate.csv", "r") 
     
-    #Váriaveis
-    matriz_tabela3=[]
-    num_linhas_matriz=0
-    primeira_linha=1
-    
-    #Armazenando dados do arquivo em uma matriz
+    #Obtendo BD-BR do arquivo
     for linha in tabela3:   
-        if(primeira_linha==1): #Linha 1 não precisa ser armazenada
+        if(primeira_linha==1): #Linha 1 não precisa ser lida
             primeira_linha+=1
         else:
             dados = linha
             dados = dados.split(';')
-            num_linhas_matriz+=1  
-            matriz_tabela3.append(dados)
+            if (primeira_linha==2): #Na primeira linha do arquivo ainda não foram armazenados dados na váriavel novo_grafico
+                novo_grafico = dados #novo gráfico armazena dados que foram lidos na execução anterior
+                primeira_linha+=1
+                 
+            if (dados[0]!=novo_grafico[0]): #Montar um novo gráfico quando for o módulo difente do que estava sendo lido antes
+                monta_grafico(erros,bd_br,novo_grafico[0],pasta_tabelas)
+                bd_br=[]
+                novo_grafico=dados
+                
+            if (dados[4]!='0'): #não pegar dados quando o erro = 0
+                bd_br.append(float(dados[5]))
+                novo_grafico=dados
+    monta_grafico(erros,bd_br,novo_grafico[0],pasta_tabelas)
     tabela3.close()
     
-    #Armazenando dados BD-Rate para o gráfico
-    lista=[]
-    quant_linhas=0
-    quant_colunas=0
-    for erros in erros:
-        quant_linhas+=1
-        quant_colunas=0
-        dados=''
-        for linha in matriz_tabela3: 
-            if(erros == linha[3] and linha[3] != '0'): #Quando encontra linha do BD-Rate, não ler para os erros = 0 (referência)
-                dados += linha[5]
-                dados += ';'      
-                quant_colunas+=1
-        dados = dados.split(';')
-        dados.pop(-1) #Remove útilmo elemento da lista (espaço em branco)
-        lista.append(dados)
-        
-    #Convertendo dados para float
-    for cont in range (0,quant_linhas,1):
-        temp = [float(item) for item in lista[cont]]
-        y.append(temp)
+def monta_grafico(erros,bd_br,dados,pasta_tabelas): #Montando Gráfico
+    plt.figure(figsize=(8,4)) #aumenta tamanho do gráfico
+    plt.bar(erros,bd_br,color='#1a64a8')
     
-    
-    #Montando Gráfico
-    x = np.arange(quant_colunas) 
-    width = 0.3     #largura das barras
-    
-    plt.figure(figsize=(10,5)) #aumenta tamanho do gráfico
-    
-    #criando as barras
-    plt.bar(x-width, y[0], width, color='#6A5ACD') 
-    plt.bar(x, y[1], width, color='#6495ED') 
-    plt.bar(x+width, y[2], width, color='#00BFFF')
-     
     #legendas
-    plt.xlabel("Erros") 
-    plt.ylabel("BD-Rate") 
-    plt.xticks(x, ['1E_07','1E_05', '1E_03']) 
-    plt.legend(["Faster", "Medium", "Slower"])
-    plt.title(f'Tabela {matriz_tabela3[0][0]}') 
+    plt.xlabel("Taxa de erro (leitura e escrita)") 
+    plt.ylabel("BD-BR (%)") 
+    plt.title(dados) 
     
-    plt.savefig(f'{pasta_tabelas}tabela1-bdrate.png')  #Salva figura do gráfico
+    plt.savefig(f'{pasta_tabelas}grafico1_{dados}.png') #Salvar imagem do gráfico no computador 
     
-    plt.show() #Mostra Gráfico
-    
+    plt.show()
         
     
    
