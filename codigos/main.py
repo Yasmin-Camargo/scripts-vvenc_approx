@@ -3,7 +3,7 @@ from geratabela2 import *
 from geratabela3 import *
 from geragrafico1 import *
 
-pasta_arquivos = "RaceHorses-medium"  #Nome da pasta com os arquivos .log
+pasta_arquivos = "RaceHorses-medium-all"  #Nome da pasta com os arquivos .log
 
 #Tabela completa com os dados dos arquivos.log
 codigo_tabela1(f"../arquivos/{pasta_arquivos}", f"../tabelas/tabelas-{pasta_arquivos}/")   
