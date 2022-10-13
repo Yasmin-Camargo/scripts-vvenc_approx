@@ -7,7 +7,7 @@ def codigo_grafico1(pasta_tabelas): #Gráfico BD_Rate
     
     #Váriaveis
     bd_br = []  #eixo y
-    erros=['10^-3','10^-4','10^-5','10^-6','10^-7'] #eixo x
+    erros=['10-3','10-4','10-5','10-6','10-7'] #eixo x
     primeira_linha=1
     
     #Abrindo arquivos:
@@ -36,13 +36,17 @@ def codigo_grafico1(pasta_tabelas): #Gráfico BD_Rate
     tabela3.close()
     
 def monta_grafico(erros,bd_br,dados,pasta_tabelas): #Montando Gráfico
-    plt.rcParams.update({'font.size': 12})
-    plt.figure(figsize=(8,4)) #aumenta tamanho do gráfico
-    plt.bar(erros,bd_br,color='#1a64a8',bottom=12)
+    plt.rcParams.update({'font.size': 13}) #tamanho fonte
+    plt.figure(figsize=(8,4.5)) #aumenta tamanho do gráfico
+    
+    plt.bar(erros,bd_br,color='#019FE3')
+    plt.yticks([])
+    plt.yticks(np.arange(0.1, 0.8,0.1)) 
+    # plt.yticks(np.arange(0, 115,15)) [ para as Transformadas ] 
     
     #legendas
     plt.xlabel("Taxa de erro (leitura e escrita)", fontsize = 15)
-    plt.ylabel("BD-BR (%)",fontsize = 15) 
+    plt.ylabel("BD-Rate (%)",fontsize = 15) 
     
     #Titulo do gráfico de acordo com o módulo
     if(dados == "fme_approx"):
@@ -56,7 +60,15 @@ def monta_grafico(erros,bd_br,dados,pasta_tabelas): #Montando Gráfico
     else:
         plt.title(dados, fontsize = 18)
     
-    plt.savefig(f'{pasta_tabelas}grafico1_{dados}.png') #Salvar imagem do gráfico no computador 
+    plt.savefig(f'{pasta_tabelas}grafico1_{dados}.png') #Salvar imagem do gráfico no computador
+    
+    #legenda em barras
+    cont=0
+    while (cont < 5): 
+        plt.text(cont-0.28, bd_br[cont]+0.03, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5}) 
+        cont+=1
+        #plt.text(cont-0.28, bd_br[cont]+2.5, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5})  [ Para as Transformadas ]
+        
     
     plt.show()
         
