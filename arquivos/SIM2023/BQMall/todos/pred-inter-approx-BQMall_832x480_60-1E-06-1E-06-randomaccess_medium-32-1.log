@@ -1,0 +1,46 @@
+vvencFFapp: Fraunhofer VVC Encoder ver. 1.5.0 [Linux][GCC 11.3.0][64 bit][SIMD=AVX2]
+ started @ Sun Apr 23 13:45:19 2023
+CODING TOOL CFG: CTU128 QT44BTT21 IBD:1 SAO:1 ALF:1 (NonLinLuma:0 NonLinChr:0) CCALF:1 Tiles:1x1 Slices:1 WPP:0 WPP-Substreams:1 TMVP:1 DQ:1 SDH:0 CST:1 BDOF:1 DMVR:1 MTSImplicit:1 SBT:0 JCbCr:1 CabacInitPresent:1 AMVR:5 SMVD:3 LMCS:2 (Signal:SDR Opt:0) CIIP:0 MIP:1 AFFINE:2 (PROF:1, Type:1) MMVD:3 DisFracMMVD:1 SbTMVP:1 GPM:3 LFNST:1 MTS:0 ISP:3 TS:2 TSLog2MaxSize:4 useChromaTS:0 BDPCM:2 IBC:2 BCW:0 
+ENC. ALG. CFG: QPA:0 HAD:1 RDQ:1 RDQTS:1 ASR:1 MinSearchWindow:96 RestrictMESampling:0 EDO:2 MCTF:2 
+PRE-ANALYSIS CFG: STA:1 LeadFrames:0 TrailFrames:0 
+FAST TOOL CFG: ECU:0 FEN:1 FDM:1 FastSearch:4 (SCC:2) LCTUFast:1 FastMrg:2 PBIntraFast:1 AMaxBT:1 FastQtBtEnc:1 ContentBasedFastQtbt:0 FastMIP:3 FastIntraTools:0 IntraEstDecBit:2 FastLocalDualTree:1 IntegerET:0 FastSubPel:1 QtbttExtraFast:3 FastTTSplit:0 IBCFastMethod:3 FIM:0 ALFSpeed:0 QuantThr: 4 
+RATE CONTROL CFG: RateControl:0 LookAhead:0 
+PARALLEL PROCESSING CFG: NumThreads:0 MaxParallelFrames:0 WppBitEqual:0 WF:0 
+
+POC     0 TId: 0 (  IDR_N_LP, I-SLICE, QP 29, TF 2)     239000 bits [Y 37.7621 dB    U 41.1947 dB    V 42.2796 dB] [ET   199 ] [L0 ] [L1 ]
+POC    16 TId: 1 (      STSA, B-SLICE, QP 34, TF 1)      48600 bits [Y 35.5685 dB    U 39.9139 dB    V 40.6277 dB] [ET    66 ] [L0 0 ] [L1 0 ]
+POC     8 TId: 2 (      STSA, B-SLICE, QP 35, TF 0)      20464 bits [Y 35.7301 dB    U 40.2549 dB    V 41.1260 dB] [ET    51 ] [L0 0 16 ] [L1 16 0 ]
+POC     4 TId: 3 (      STSA, B-SLICE, QP 38)             7952 bits [Y 35.6030 dB    U 40.6791 dB    V 41.5931 dB] [ET    23 ] [L0 0 8 ] [L1 8 16 ]
+POC     2 TId: 4 (      STSA, B-SLICE, QP 40)             3744 bits [Y 35.7998 dB    U 40.9350 dB    V 41.9165 dB] [ET     5 ] [L0 0 4 ] [L1 4 8 ]
+POC     1 TId: 5 (      STSA, B-SLICE, QP 41)             1496 bits [Y 36.4310 dB    U 40.9952 dB    V 42.0885 dB] [ET     3 ] [L0 0 2 ] [L1 2 4 ]
+POC     3 TId: 5 (      STSA, B-SLICE, QP 41)             1512 bits [Y 35.3802 dB    U 40.8840 dB    V 41.7984 dB] [ET     3 ] [L0 2 0 ] [L1 4 8 ]
+POC     6 TId: 4 (      STSA, B-SLICE, QP 40)             3984 bits [Y 35.1353 dB    U 40.5217 dB    V 41.3442 dB] [ET     6 ] [L0 4 0 ] [L1 8 16 ]
+POC     5 TId: 5 (      STSA, B-SLICE, QP 41)             1552 bits [Y 35.0466 dB    U 40.5692 dB    V 41.4517 dB] [ET     3 ] [L0 4 0 ] [L1 6 8 ]
+POC     7 TId: 5 (      STSA, B-SLICE, QP 41)             1272 bits [Y 35.1506 dB    U 40.3812 dB    V 41.2390 dB] [ET     3 ] [L0 6 4 ] [L1 8 16 ]
+POC    12 TId: 3 (      STSA, B-SLICE, QP 38)            10048 bits [Y 34.9341 dB    U 40.0596 dB    V 40.8828 dB] [ET    36 ] [L0 8 0 ] [L1 16 8 ]
+POC    10 TId: 4 (      STSA, B-SLICE, QP 40)             3896 bits [Y 34.7826 dB    U 40.1265 dB    V 41.0433 dB] [ET     6 ] [L0 8 0 ] [L1 12 16 ]
+POC     9 TId: 5 (      STSA, B-SLICE, QP 41)             1720 bits [Y 34.9658 dB    U 40.2524 dB    V 41.0876 dB] [ET     4 ] [L0 8 0 ] [L1 10 12 ]
+POC    11 TId: 5 (      STSA, B-SLICE, QP 41)             1704 bits [Y 34.5962 dB    U 40.0606 dB    V 40.9481 dB] [ET     4 ] [L0 10 8 ] [L1 12 16 ]
+POC    14 TId: 4 (      STSA, B-SLICE, QP 40)             4568 bits [Y 34.5686 dB    U 39.9575 dB    V 40.6759 dB] [ET     7 ] [L0 12 8 ] [L1 16 12 ]
+POC    13 TId: 5 (      STSA, B-SLICE, QP 41)             2256 bits [Y 34.5088 dB    U 39.9958 dB    V 40.8058 dB] [ET     4 ] [L0 12 8 ] [L1 14 16 ]
+POC    15 TId: 5 (      STSA, B-SLICE, QP 41)             1856 bits [Y 34.5755 dB    U 39.9573 dB    V 40.5888 dB] [ET     3 ] [L0 14 12 ] [L1 16 14 ]
+
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR   
+	       17    a    1255.1435   35.3258   40.3964   41.2645   36.4513
+
+ finished @ Sun Apr 23 13:52:39 2023
+ Total Time:      439.871 sec. [user]      439.931 sec. [elapsed]
+
+Level: 0
+Inject Calls: 108773888
+Errors injected by bit:
+	Bit 0: 93
+	Bit 1: 102
+	Bit 2: 94
+	Bit 3: 118
+	Bit 4: 117
+	Bit 5: 96
+	Bit 6: 108
+	Bit 7: 91
+
+Total errors injected: 819

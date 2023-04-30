@@ -1,0 +1,46 @@
+vvencFFapp: Fraunhofer VVC Encoder ver. 1.5.0 [Linux][GCC 11.3.0][64 bit][SIMD=AVX2]
+ started @ Thu Apr 13 07:15:43 2023
+CODING TOOL CFG: CTU128 QT44BTT21 IBD:1 SAO:1 ALF:1 (NonLinLuma:0 NonLinChr:0) CCALF:1 Tiles:1x1 Slices:1 WPP:0 WPP-Substreams:1 TMVP:1 DQ:1 SDH:0 CST:1 BDOF:1 DMVR:1 MTSImplicit:1 SBT:0 JCbCr:1 CabacInitPresent:1 AMVR:5 SMVD:3 LMCS:2 (Signal:SDR Opt:0) CIIP:0 MIP:1 AFFINE:2 (PROF:1, Type:1) MMVD:3 DisFracMMVD:1 SbTMVP:1 GPM:3 LFNST:1 MTS:0 ISP:3 TS:2 TSLog2MaxSize:4 useChromaTS:0 BDPCM:2 IBC:2 BCW:0 
+ENC. ALG. CFG: QPA:0 HAD:1 RDQ:1 RDQTS:1 ASR:1 MinSearchWindow:96 RestrictMESampling:0 EDO:2 MCTF:2 
+PRE-ANALYSIS CFG: STA:1 LeadFrames:0 TrailFrames:0 
+FAST TOOL CFG: ECU:0 FEN:1 FDM:1 FastSearch:4 (SCC:2) LCTUFast:1 FastMrg:2 PBIntraFast:1 AMaxBT:1 FastQtBtEnc:1 ContentBasedFastQtbt:0 FastMIP:3 FastIntraTools:0 IntraEstDecBit:2 FastLocalDualTree:1 IntegerET:0 FastSubPel:1 QtbttExtraFast:3 FastTTSplit:0 IBCFastMethod:3 FIM:0 ALFSpeed:0 QuantThr: 4 
+RATE CONTROL CFG: RateControl:0 LookAhead:0 
+PARALLEL PROCESSING CFG: NumThreads:0 MaxParallelFrames:0 WppBitEqual:0 WF:0 
+
+POC     0 TId: 0 (  IDR_N_LP, I-SLICE, QP 19, TF 3)     629392 bits [Y 41.1842 dB    U 43.2214 dB    V 44.1771 dB] [ET   276 ] [L0 ] [L1 ]
+POC    16 TId: 1 (      STSA, B-SLICE, QP 22, TF 2)     443840 bits [Y 42.3190 dB    U 43.3440 dB    V 44.2521 dB] [ET   655 ] [L0 0 ] [L1 0 ]
+POC     8 TId: 2 (      STSA, B-SLICE, QP 23, TF 1)     350352 bits [Y 40.6723 dB    U 41.9995 dB    V 43.2623 dB] [ET  1072 ] [L0 0 16 ] [L1 16 0 ]
+POC     4 TId: 3 (      STSA, B-SLICE, QP 26, TF 0)     177072 bits [Y 38.9387 dB    U 41.4282 dB    V 42.5333 dB] [ET  1107 ] [L0 0 8 ] [L1 8 16 ]
+POC     2 TId: 4 (      STSA, B-SLICE, QP 28)           107960 bits [Y 38.3663 dB    U 41.4483 dB    V 42.5775 dB] [ET  1039 ] [L0 0 4 ] [L1 4 8 ]
+POC     1 TId: 5 (      STSA, B-SLICE, QP 29)            66528 bits [Y 37.8777 dB    U 41.5341 dB    V 42.7289 dB] [ET   826 ] [L0 0 2 ] [L1 2 4 ]
+POC     3 TId: 5 (      STSA, B-SLICE, QP 29)            65528 bits [Y 37.7338 dB    U 41.0719 dB    V 42.2401 dB] [ET   967 ] [L0 2 0 ] [L1 4 8 ]
+POC     6 TId: 4 (      STSA, B-SLICE, QP 28)           102976 bits [Y 38.3393 dB    U 41.1400 dB    V 42.3153 dB] [ET  1154 ] [L0 4 0 ] [L1 8 16 ]
+POC     5 TId: 5 (      STSA, B-SLICE, QP 29)            62000 bits [Y 37.7443 dB    U 40.9221 dB    V 42.2220 dB] [ET   961 ] [L0 4 0 ] [L1 6 8 ]
+POC     7 TId: 5 (      STSA, B-SLICE, QP 29)            63136 bits [Y 37.8152 dB    U 40.9388 dB    V 42.1817 dB] [ET   959 ] [L0 6 4 ] [L1 8 16 ]
+POC    12 TId: 3 (      STSA, B-SLICE, QP 26, TF 0)     183880 bits [Y 38.9513 dB    U 41.5240 dB    V 42.4719 dB] [ET  1173 ] [L0 8 0 ] [L1 16 8 ]
+POC    10 TId: 4 (      STSA, B-SLICE, QP 28)           114768 bits [Y 38.3158 dB    U 41.1459 dB    V 42.0418 dB] [ET  1254 ] [L0 8 0 ] [L1 12 16 ]
+POC     9 TId: 5 (      STSA, B-SLICE, QP 29)            64680 bits [Y 37.8468 dB    U 40.9341 dB    V 42.1526 dB] [ET   981 ] [L0 8 0 ] [L1 10 12 ]
+POC    11 TId: 5 (      STSA, B-SLICE, QP 29)            67976 bits [Y 37.7182 dB    U 40.9586 dB    V 41.8968 dB] [ET  1009 ] [L0 10 8 ] [L1 12 16 ]
+POC    14 TId: 4 (      STSA, B-SLICE, QP 28)           116184 bits [Y 38.3764 dB    U 41.1860 dB    V 42.2737 dB] [ET  1025 ] [L0 12 8 ] [L1 16 12 ]
+POC    13 TId: 5 (      STSA, B-SLICE, QP 29)            65712 bits [Y 37.7451 dB    U 40.9817 dB    V 42.0278 dB] [ET   989 ] [L0 12 8 ] [L1 14 16 ]
+POC    15 TId: 5 (      STSA, B-SLICE, QP 29)            68616 bits [Y 37.8905 dB    U 41.2168 dB    V 42.4555 dB] [ET   844 ] [L0 14 12 ] [L1 16 14 ]
+
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR   
+	       17    a    4854.0000   38.6962   41.4703   42.5771   39.3917
+
+ finished @ Thu Apr 13 11:47:32 2023
+ Total Time:    16298.704 sec. [user]    16308.306 sec. [elapsed]
+
+Level: 0
+Inject Calls: 20075806879
+Errors injected by bit:
+	Bit 0: 200878
+	Bit 1: 200458
+	Bit 2: 200399
+	Bit 3: 201397
+	Bit 4: 201037
+	Bit 5: 200700
+	Bit 6: 200438
+	Bit 7: 200188
+
+Total errors injected: 1605495

@@ -1,0 +1,46 @@
+vvencFFapp: Fraunhofer VVC Encoder ver. 1.5.0 [Linux][GCC 11.3.0][64 bit][SIMD=AVX2]
+ started @ Tue Apr 11 12:28:00 2023
+CODING TOOL CFG: CTU128 QT44BTT21 IBD:1 SAO:1 ALF:1 (NonLinLuma:0 NonLinChr:0) CCALF:1 Tiles:1x1 Slices:1 WPP:0 WPP-Substreams:1 TMVP:1 DQ:1 SDH:0 CST:1 BDOF:1 DMVR:1 MTSImplicit:1 SBT:0 JCbCr:1 CabacInitPresent:1 AMVR:5 SMVD:3 LMCS:2 (Signal:SDR Opt:0) CIIP:0 MIP:1 AFFINE:2 (PROF:1, Type:1) MMVD:3 DisFracMMVD:1 SbTMVP:1 GPM:3 LFNST:1 MTS:0 ISP:3 TS:2 TSLog2MaxSize:4 useChromaTS:0 BDPCM:2 IBC:2 BCW:0 
+ENC. ALG. CFG: QPA:0 HAD:1 RDQ:1 RDQTS:1 ASR:1 MinSearchWindow:96 RestrictMESampling:0 EDO:2 MCTF:2 
+PRE-ANALYSIS CFG: STA:1 LeadFrames:0 TrailFrames:0 
+FAST TOOL CFG: ECU:0 FEN:1 FDM:1 FastSearch:4 (SCC:2) LCTUFast:1 FastMrg:2 PBIntraFast:1 AMaxBT:1 FastQtBtEnc:1 ContentBasedFastQtbt:0 FastMIP:3 FastIntraTools:0 IntraEstDecBit:2 FastLocalDualTree:1 IntegerET:0 FastSubPel:1 QtbttExtraFast:3 FastTTSplit:0 IBCFastMethod:3 FIM:0 ALFSpeed:0 QuantThr: 4 
+RATE CONTROL CFG: RateControl:0 LookAhead:0 
+PARALLEL PROCESSING CFG: NumThreads:0 MaxParallelFrames:0 WppBitEqual:0 WF:0 
+
+POC     0 TId: 0 (  IDR_N_LP, I-SLICE, QP 34, TF 2)      85368 bits [Y 35.6254 dB    U 39.1515 dB    V 40.0627 dB] [ET   137 ] [L0 ] [L1 ]
+POC    16 TId: 1 (      STSA, B-SLICE, QP 40, TF 1)      15640 bits [Y 33.6085 dB    U 38.0576 dB    V 38.0564 dB] [ET   296 ] [L0 0 ] [L1 0 ]
+POC     8 TId: 2 (      STSA, B-SLICE, QP 40, TF 0)      11000 bits [Y 33.8818 dB    U 38.2873 dB    V 39.1806 dB] [ET   535 ] [L0 0 16 ] [L1 16 0 ]
+POC     4 TId: 3 (      STSA, B-SLICE, QP 43)             6144 bits [Y 33.4959 dB    U 38.3282 dB    V 38.7897 dB] [ET   470 ] [L0 0 8 ] [L1 8 16 ]
+POC     2 TId: 4 (      STSA, B-SLICE, QP 45)             2248 bits [Y 33.7477 dB    U 38.5604 dB    V 39.0538 dB] [ET   370 ] [L0 0 4 ] [L1 4 8 ]
+POC     1 TId: 5 (      STSA, B-SLICE, QP 46)              224 bits [Y 35.6254 dB    U 39.1515 dB    V 40.0627 dB] [ET   159 ] [L0 0 2 ] [L1 2 4 ]
+POC     3 TId: 5 (      STSA, B-SLICE, QP 46)             1472 bits [Y 33.2376 dB    U 38.2278 dB    V 38.6078 dB] [ET   273 ] [L0 2 0 ] [L1 4 8 ]
+POC     6 TId: 4 (      STSA, B-SLICE, QP 45)             3280 bits [Y 32.9699 dB    U 38.0513 dB    V 38.4521 dB] [ET   453 ] [L0 4 0 ] [L1 8 16 ]
+POC     5 TId: 5 (      STSA, B-SLICE, QP 46)             1648 bits [Y 32.8188 dB    U 37.9662 dB    V 38.4755 dB] [ET   344 ] [L0 4 0 ] [L1 6 8 ]
+POC     7 TId: 5 (      STSA, B-SLICE, QP 46)             1696 bits [Y 32.8114 dB    U 38.0977 dB    V 38.6123 dB] [ET   303 ] [L0 6 4 ] [L1 8 16 ]
+POC    12 TId: 3 (      STSA, B-SLICE, QP 43)             6760 bits [Y 32.9523 dB    U 37.8452 dB    V 38.3011 dB] [ET   515 ] [L0 8 0 ] [L1 16 8 ]
+POC    10 TId: 4 (      STSA, B-SLICE, QP 45)             3624 bits [Y 32.8361 dB    U 37.8799 dB    V 38.1625 dB] [ET   529 ] [L0 8 0 ] [L1 12 16 ]
+POC     9 TId: 5 (      STSA, B-SLICE, QP 46)             1432 bits [Y 33.1014 dB    U 38.0692 dB    V 38.4551 dB] [ET   317 ] [L0 8 0 ] [L1 10 12 ]
+POC    11 TId: 5 (      STSA, B-SLICE, QP 46)             1800 bits [Y 32.7884 dB    U 37.7853 dB    V 37.9830 dB] [ET   329 ] [L0 10 8 ] [L1 12 16 ]
+POC    14 TId: 4 (      STSA, B-SLICE, QP 45)             3568 bits [Y 32.6302 dB    U 37.7737 dB    V 37.9135 dB] [ET   380 ] [L0 12 8 ] [L1 16 12 ]
+POC    13 TId: 5 (      STSA, B-SLICE, QP 46)             1416 bits [Y 32.5041 dB    U 37.8405 dB    V 38.0179 dB] [ET   329 ] [L0 12 8 ] [L1 14 16 ]
+POC    15 TId: 5 (      STSA, B-SLICE, QP 46)             1344 bits [Y 32.6840 dB    U 37.7991 dB    V 37.8801 dB] [ET   257 ] [L0 14 12 ] [L1 16 14 ]
+
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR   
+	       17    a     437.2471   33.3717   38.1690   38.5922   34.4177
+
+ finished @ Tue Apr 11 14:08:09 2023
+ Total Time:     6008.761 sec. [user]     6008.923 sec. [elapsed]
+
+Level: 0
+Inject Calls: 7474928916
+Errors injected by bit:
+	Bit 0: 750
+	Bit 1: 716
+	Bit 2: 745
+	Bit 3: 781
+	Bit 4: 729
+	Bit 5: 768
+	Bit 6: 729
+	Bit 7: 736
+
+Total errors injected: 5954

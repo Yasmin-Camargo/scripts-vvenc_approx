@@ -1,0 +1,46 @@
+vvencFFapp: Fraunhofer VVC Encoder ver. 1.5.0 [Linux][GCC 11.3.0][64 bit][SIMD=AVX2]
+ started @ Sun Apr 23 22:35:00 2023
+CODING TOOL CFG: CTU128 QT44BTT21 IBD:1 SAO:1 ALF:1 (NonLinLuma:0 NonLinChr:0) CCALF:1 Tiles:1x1 Slices:1 WPP:0 WPP-Substreams:1 TMVP:1 DQ:1 SDH:0 CST:1 BDOF:1 DMVR:1 MTSImplicit:1 SBT:0 JCbCr:1 CabacInitPresent:1 AMVR:5 SMVD:3 LMCS:2 (Signal:SDR Opt:0) CIIP:0 MIP:1 AFFINE:2 (PROF:1, Type:1) MMVD:3 DisFracMMVD:1 SbTMVP:1 GPM:3 LFNST:1 MTS:0 ISP:3 TS:2 TSLog2MaxSize:4 useChromaTS:0 BDPCM:2 IBC:2 BCW:0 
+ENC. ALG. CFG: QPA:0 HAD:1 RDQ:1 RDQTS:1 ASR:1 MinSearchWindow:96 RestrictMESampling:0 EDO:2 MCTF:2 
+PRE-ANALYSIS CFG: STA:1 LeadFrames:0 TrailFrames:0 
+FAST TOOL CFG: ECU:0 FEN:1 FDM:1 FastSearch:4 (SCC:2) LCTUFast:1 FastMrg:2 PBIntraFast:1 AMaxBT:1 FastQtBtEnc:1 ContentBasedFastQtbt:0 FastMIP:3 FastIntraTools:0 IntraEstDecBit:2 FastLocalDualTree:1 IntegerET:0 FastSubPel:1 QtbttExtraFast:3 FastTTSplit:0 IBCFastMethod:3 FIM:0 ALFSpeed:0 QuantThr: 4 
+RATE CONTROL CFG: RateControl:0 LookAhead:0 
+PARALLEL PROCESSING CFG: NumThreads:0 MaxParallelFrames:0 WppBitEqual:0 WF:0 
+
+POC     0 TId: 0 (  IDR_N_LP, I-SLICE, QP 29, TF 2)     160808 bits [Y 38.4367 dB    U 41.6230 dB    V 42.6136 dB] [ET   187 ] [L0 ] [L1 ]
+POC    16 TId: 1 (      STSA, B-SLICE, QP 34, TF 1)      30720 bits [Y 36.4819 dB    U 39.9817 dB    V 40.1460 dB] [ET    48 ] [L0 0 ] [L1 0 ]
+POC     8 TId: 2 (      STSA, B-SLICE, QP 35, TF 0)      19024 bits [Y 36.4973 dB    U 39.9982 dB    V 40.8526 dB] [ET    40 ] [L0 0 16 ] [L1 16 0 ]
+POC     4 TId: 3 (      STSA, B-SLICE, QP 38)            12152 bits [Y 36.2237 dB    U 40.2179 dB    V 40.8603 dB] [ET    32 ] [L0 0 8 ] [L1 8 16 ]
+POC     2 TId: 4 (      STSA, B-SLICE, QP 40)             4792 bits [Y 36.2592 dB    U 40.8871 dB    V 41.4456 dB] [ET     9 ] [L0 0 4 ] [L1 4 8 ]
+POC     1 TId: 5 (      STSA, B-SLICE, QP 41)              232 bits [Y 38.4367 dB    U 41.6230 dB    V 42.6136 dB] [ET     2 ] [L0 0 2 ] [L1 2 4 ]
+POC     3 TId: 5 (      STSA, B-SLICE, QP 41)             3096 bits [Y 35.7951 dB    U 40.3892 dB    V 40.6709 dB] [ET     7 ] [L0 2 0 ] [L1 4 8 ]
+POC     6 TId: 4 (      STSA, B-SLICE, QP 40)             6544 bits [Y 35.5909 dB    U 40.0114 dB    V 40.4958 dB] [ET    13 ] [L0 4 0 ] [L1 8 16 ]
+POC     5 TId: 5 (      STSA, B-SLICE, QP 41)             3424 bits [Y 35.3388 dB    U 39.9173 dB    V 40.4139 dB] [ET     6 ] [L0 4 0 ] [L1 6 8 ]
+POC     7 TId: 5 (      STSA, B-SLICE, QP 41)             3232 bits [Y 35.2603 dB    U 39.9385 dB    V 40.4276 dB] [ET     7 ] [L0 6 4 ] [L1 8 16 ]
+POC    12 TId: 3 (      STSA, B-SLICE, QP 38)            13224 bits [Y 35.6195 dB    U 39.8231 dB    V 40.0879 dB] [ET    64 ] [L0 8 0 ] [L1 16 8 ]
+POC    10 TId: 4 (      STSA, B-SLICE, QP 40)             6944 bits [Y 35.2941 dB    U 39.7929 dB    V 40.2738 dB] [ET    14 ] [L0 8 0 ] [L1 12 16 ]
+POC     9 TId: 5 (      STSA, B-SLICE, QP 41)             3416 bits [Y 35.6291 dB    U 39.9124 dB    V 40.5153 dB] [ET     8 ] [L0 8 0 ] [L1 10 12 ]
+POC    11 TId: 5 (      STSA, B-SLICE, QP 41)             3896 bits [Y 35.2304 dB    U 39.7556 dB    V 39.8702 dB] [ET     8 ] [L0 10 8 ] [L1 12 16 ]
+POC    14 TId: 4 (      STSA, B-SLICE, QP 40)             7488 bits [Y 35.2497 dB    U 39.6415 dB    V 39.8442 dB] [ET    13 ] [L0 12 8 ] [L1 16 12 ]
+POC    13 TId: 5 (      STSA, B-SLICE, QP 41)             3344 bits [Y 35.0111 dB    U 39.5777 dB    V 39.8266 dB] [ET     7 ] [L0 12 8 ] [L1 14 16 ]
+POC    15 TId: 5 (      STSA, B-SLICE, QP 41)             3032 bits [Y 35.2276 dB    U 39.7032 dB    V 39.7337 dB] [ET     6 ] [L0 14 12 ] [L1 16 14 ]
+
+	Total Frames |   Bitrate     Y-PSNR    U-PSNR    V-PSNR    YUV-PSNR   
+	       17    a     839.3176   35.9754   40.1643   40.6289   36.9182
+
+ finished @ Sun Apr 23 22:43:03 2023
+ Total Time:      482.939 sec. [user]      482.995 sec. [elapsed]
+
+Level: 0
+Inject Calls: 84874752
+Errors injected by bit:
+	Bit 0: 8471
+	Bit 1: 8493
+	Bit 2: 8298
+	Bit 3: 8470
+	Bit 4: 8552
+	Bit 5: 8481
+	Bit 6: 8574
+	Bit 7: 8431
+
+Total errors injected: 67770
