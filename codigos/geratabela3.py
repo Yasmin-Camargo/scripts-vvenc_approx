@@ -67,6 +67,7 @@ def codigo_tabela3(pasta_tabelas): #Tabela 3
                 
                 tabela3.write(f'{BD_RATE(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))};') #Calculo BD-RATE
                 tabela3.write(f'{BD_PSNR(np.array(Bitrate_Original), np.array(PSNR_Original), np.array(Bitrate_Modificada), np.array(PSNR_Modificada))}\n') #Calculo BD-PSNR
+                
     
     tabela3.close()
                      

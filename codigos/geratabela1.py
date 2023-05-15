@@ -24,7 +24,7 @@ def codigo_tabela1(pasta_arquivos, pasta_tabelas): #Tabela 1
      tabela1.write("Approx Module;VVenC Profile;Video;Read BER;Write BER;QP;Rep.;YUV-PSNR;Bitrate;Execution Time\n")
 
      todos_arquivos = os.listdir(pasta_arquivos) #Obtendo nomes dos arquivos
-
+     todos_arquivos.sort()
      #Extraindo informações da codificação utilizada no nome do arquivo:
      for nome_arquivo in todos_arquivos:     
           dados_nome_arquivo = nome_arquivo
