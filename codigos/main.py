@@ -5,8 +5,8 @@ from bdrate_repeticoes import *
 from geragrafico1 import *
 from renomear import *
 
-pasta_arquivos = "SIM2023-inter"  #Nome da pasta com os arquivos .log
-repeticoes = 5
+pasta_arquivos = "10rp"  #Nome da pasta com os arquivos .log
+repeticoes = 10
 
 #Renomeia arquivos
 renomear(f"../arquivos/{pasta_arquivos}/")

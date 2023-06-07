@@ -53,13 +53,15 @@ def monta_grafico(erros,bd_br,dados,pasta_tabelas, video, matriz): #Montando Gr√
     plt.rcParams.update({'font.size': 13}) #tamanho fonte
     plt.figure(figsize=(8,4.5)) #aumenta tamanho do gr√°fico
     
+    #plt.bar(erros,bd_br,color='#581815')
     plt.bar(erros,bd_br,color='#019FE3')
     plt.yticks([])
     
     # plt.yticks(np.arange(0, 115,15)) [ para as Transformadas ] 
     
     #legendas
-    plt.xlabel("Taxa de erro (leitura e escrita)", fontsize = 15)
+    plt.xlabel("Error rate (read and write)", fontsize = 15)
+    #plt.xlabel("Taxa de erro (leitura e escrita)", fontsize = 15)
     plt.ylabel("BD-Rate (%)",fontsize = 15) 
     
     #Titulo do gr√°fico de acordo com o m√≥dulo e v√≠deo
@@ -76,21 +78,6 @@ def monta_grafico(erros,bd_br,dados,pasta_tabelas, video, matriz): #Montando Gr√
         plt.title(f'{video[0]}: {dados}', fontsize = 18)
     
     
-    #legenda em barras
-    """
-    cont=0
-    while (cont < 5):
-        if (bd_br[cont] < -0.1):
-            plt.text(cont-0.25, bd_br[cont]+0.13, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5}) 
-        elif (bd_br[cont] < -0.05):
-            plt.text(cont-0.25, bd_br[cont]+0.09, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5}) 
-        elif (bd_br[cont] < 0):
-            plt.text(cont-0.25, bd_br[cont]+0.04, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5}) 
-        else:
-            plt.text(cont-0.25, bd_br[cont]+0.02, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5}) 
-        
-        cont+=1
-    """ 
     for linha in matriz: 
         if(linha[0] == dados and linha[2] == videoCompleto):
             if(linha[3] == "1E_03"):
@@ -105,8 +92,25 @@ def monta_grafico(erros,bd_br,dados,pasta_tabelas, video, matriz): #Montando Gr√
                 plt.scatter("10-7", float(linha[5]), c='blue')
            
     plt.yticks(np.arange(0, 0.65,0.1)) 
+    
+    """
+    #legenda em barras
+    cont=0
+    while (cont < 5):
+        if (bd_br[cont] < -0.1):
+            plt.text(cont-0.25, bd_br[cont]+0.13, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5}) 
+        elif (bd_br[cont] < -0.05):
+            plt.text(cont-0.25, bd_br[cont]+0.09, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5}) 
+        elif (bd_br[cont] < 0):
+            plt.text(cont-0.25, bd_br[cont]+0.04, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5}) 
+        else:
+            plt.text(cont-0.25, bd_br[cont]+0.02, f'{round(bd_br[cont],2)}%', color = '#1a64a8', fontweight = 'normal', bbox={'facecolor': 'gray', 'alpha': 0.2, 'pad': 5}) 
+        
+        cont+=1
+    """          
+    
     plt.savefig(f'{pasta_tabelas}grafico1_{dados}-{video[0]}.png') #Salvar imagem do gr√°fico no computador
-    plt.show()
+    #plt.show()
         
     
    
