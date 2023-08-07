@@ -1,8 +1,8 @@
 # Script para coletar estatisticas dos arquivos traces
 import os
 
-pasta_arquivos = "../outputs_teste"
-num_repeticoes = 2
+pasta_arquivos = "../outputs"
+num_repeticoes = 10
 
 # Váriaveis
 analysis1_inter = 0
@@ -71,7 +71,7 @@ for nome_arquivo in todos_arquivos:
         if(linha[6] == 'GeoMVL0' or linha[6] == 'GeoMVL1'):         # ANÁLISE 2: Outros
             analysis2_others += int(linha[4]) * int(linha[5])
    
-    if (int(nome_arquivo.split('-')[6][0]) == num_repeticoes - 1): # chegou no último arquivo da repetição
+    if (int(nome_arquivo.split('-')[6].split('.')[0]) == num_repeticoes - 1): # chegou no último arquivo da repetição
         analysis1_inter = (analysis1_inter / num_repeticoes)       # realiza média das repetições
         analysis1_intra = (analysis1_intra / num_repeticoes) 
         analysis1_others = (analysis1_others / num_repeticoes) 
@@ -80,7 +80,7 @@ for nome_arquivo in todos_arquivos:
         analysis2_affine = (analysis2_affine / num_repeticoes)
         analysis2_others = (analysis2_others / num_repeticoes)
         
-        # armazena dados do nome do arquivo no csv
+        # coloca no csv dados do arquivo correspondente identificados no nome do arquivo
         tabela.write(f"{nome_arquivo.split('-')[0]}; {nome_arquivo.split('-')[1]}; {nome_arquivo.split('-')[2]}; {nome_arquivo.split('-')[3]}; {nome_arquivo.split('-')[5]}; ")
     
         
@@ -106,5 +106,7 @@ for nome_arquivo in todos_arquivos:
         analysis2_fme = 0
         analysis2_affine = 0
         analysis2_others = 0
+        
+    arquivoTrace.close()
         
 tabela.close()
